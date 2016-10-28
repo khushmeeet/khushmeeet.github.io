@@ -1,0 +1,18 @@
+---
+---
+.navigator {
+    text-align: right;
+    margin-top: 20px;
+    padding: 0px 10px 0 10px;
+    a {
+        padding: 4px 4px 4px 4px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+}
+
+.current {
+    background-color: #2196F3;
+    border-radius: 5px;
+    color: #fff;
+}
