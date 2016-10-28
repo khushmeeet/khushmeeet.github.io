@@ -17,6 +17,18 @@
                 <a class="{% if page.url == '/blog.html'%} current {% endif %}" href="#">Blog</a>
             </nav>
         </header>
-        {{content}}
+        <div class="home">
+            <section>
+                <header>
+                    <img class="head-img" src="{{site.url}}/assets/yeoman-logo.png" alt="Khushmeet Singh">
+                    <h1 class="home-heading">Khushmeet Singh</h1>
+                    <p>Pythonist , Web developer , Angular 2 , Machine learning , Linux<i class="fa fa-heart" aria-hidden="true" id="heart"></i>'s lover </p>
+                </header>
+            </section>
+        </div>
+        {{ content }}
+        <footer id="footer">
+            <p>&copy; Copyright Khushmeet Singh </p>
+        </footer>
     </body>
 </html>
