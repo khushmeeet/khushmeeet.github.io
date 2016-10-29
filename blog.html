@@ -1,0 +1,12 @@
+---
+layout: header
+---
+<section class="main-stuff">
+    <ul class="article-list">
+        {% for post in site.posts%}
+        <li>
+            <a href="">{{post.title}}<aside>{{post.date}}</aside></a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
