@@ -49,7 +49,7 @@
     font-size: 12px;
 }
 
-.about {
+.main-stuff {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -59,7 +59,8 @@
     padding: 40px 0 0 0;
     margin-top: 100px;
     max-width: 600px;
-    margin: 100px auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     p{
         color: #bbb;
@@ -67,4 +68,40 @@
         line-height: 1.5;
         display: block;
     }
+}
+
+.article-list {
+    list-style: none;
+    padding: 0px;
+    a {
+        text-decoration: none;
+        display: block;
+        aside {
+            float: right
+        }
+    }
+}
+
+.article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 40px 100px 40px;
+    display: block;
+    article {
+        margin: 80px 0px 0px 0px;
+        header {
+            text-align: center;
+            div {
+                display: inline-flex;
+            }
+            h6 {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+.body {
+    line-height: 1.7em;
 }
