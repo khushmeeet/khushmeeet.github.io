@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<header>
+    <nav class="navigator">
+        <a class="{% if page.url == '/' %} current {% endif %}" href="{{site.baseurl}}/index.html">About</a>
+        <a href="https://github.com/khushmeet">Github</a>
+        <a href="https://twitter.com/khushmeeet">Twitter</a>
+        <a href="#">Mail</a>
+        <a class="{% if page.url == '/blog.html'%} current {% endif %}" href="{{site.baseurl}}/blog.html">Blog</a>
+    </nav>
+</header>
+<div class="home">
+    <section>
+        <header>
+            <img class="head-img" src="{{site.url}}/assets/yeoman-logo.png" alt="Khushmeet Singh">
+            <h1 class="home-heading">Khushmeet Singh</h1>
+            <p>Pythonist , Web developer , Angular 2 , Machine learning , Linux<i class="fa fa-heart" aria-hidden="true" id="heart"></i>'s lover </p>
+        </header>
+    </section>
+</div>
+{{ content }}
+<footer id="footer">
+    <p>&copy; Copyright Khushmeet Singh </p>
+</footer>
