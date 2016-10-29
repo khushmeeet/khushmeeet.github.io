@@ -5,7 +5,7 @@ layout: header
     <ul class="article-list">
         {% for post in site.posts%}
         <li>
-            <a href="">{{post.title}}<aside>{{post.date | date: '%B %d, %Y'}}</aside></a>
+            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}<aside>{{post.date | date: '%B %d, %Y'}}</aside></a>
         </li>
         {% endfor %}
     </ul>
