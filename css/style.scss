@@ -1,6 +1,12 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .navigator {
     text-align: right;
     margin-top: 20px;
@@ -9,11 +15,13 @@
         padding: 4px 4px 4px 4px;
         margin-right: 5px;
         text-decoration: none;
+        color: dodgerblue;
     }
 }
 
 .current {
     background-color: #2196F3;
+    color: white;
     border-radius: 5px;
     color: #fff;
 }
@@ -40,18 +48,24 @@
             h1 {
                 font-size: 2.5em;
             }
+            p {
+                font-family: 'Source Sans Pro';
+                font-weight: 300;
+                color: #aaa;
+            }
         }
     }
 }
 
-#heart {
+.heart {
     color: deeppink;
-    font-size: 12px;
+    font-size: 8px;
 }
 
 .main-stuff {
     max-width: 600px;
     margin: 0 auto;
+    color: #666;
 }
 
 #footer {
@@ -73,11 +87,14 @@
 .article-list {
     list-style: none;
     padding: 0px;
-    a {
+    li {
+        margin-bottom: 20px;
+        a {
         text-decoration: none;
         display: block;
-        aside {
-            float: right
+            aside {
+                float: right
+            }
         }
     }
 }
@@ -93,10 +110,14 @@
             text-align: center;
             div {
                 display: inline-flex;
+                p {
+                    margin-right: 10px;
+                }
             }
             h6 {
                 text-transform: uppercase;
                 letter-spacing: 2px;
+                margin-bottom: 0px;
             }
         }
     }
