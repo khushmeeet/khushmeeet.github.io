@@ -1,10 +1,19 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+//@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
+    color: #666;
+}
+
+.current {
+    background-color: dodgerblue;
+    border-radius: 3px;
+    color: white;
 }
 
 .navigator {
@@ -12,18 +21,10 @@ body {
     margin-top: 20px;
     padding: 0px 10px 0 10px;
     a {
-        padding: 4px 4px 4px 4px;
+        padding: 4px 6px;
         margin-right: 5px;
         text-decoration: none;
-        color: dodgerblue;
     }
-}
-
-.current {
-    background-color: #2196F3;
-    color: white;
-    border-radius: 5px;
-    color: #fff;
 }
 
 .head-img {
@@ -47,9 +48,9 @@ body {
             position: relative;
             h1 {
                 font-size: 2.5em;
+                color: black;
             }
             p {
-                font-family: 'Source Sans Pro';
                 font-weight: 300;
                 color: #aaa;
             }
@@ -59,7 +60,6 @@ body {
 
 .heart {
     color: deeppink;
-    font-size: 8px;
 }
 
 .main-stuff {
@@ -108,10 +108,33 @@ body {
         margin: 80px 0px 0px 0px;
         header {
             text-align: center;
+            h1 {
+                font-size: 32px;
+                line-height: 1.4em;
+                margin-bottom: 15px;
+            }
+            h6 {
+                color: #b2b9be;
+                font-weight: 400;
+                font-size: 12px;
+                margin-top: 0px;
+                padding-top: 5px;
+            }
             div {
                 display: inline-flex;
-                p {
+                padding: 10px 20px;
+                i {
+                    padding-right: 10px;
+                    color: #b2b9be;
+                    font-size: 15px;
+                    padding-top: 2px;
+                }
+                a {
                     margin-right: 10px;
+                    font-weight: 300;
+                    color: #b2b9be;
+                    font-size: 15px;
+                    text-decoration: none;
                 }
             }
             h6 {
@@ -125,4 +148,5 @@ body {
 
 .body {
     line-height: 1.7em;
+    margin-top: 50px;
 }
