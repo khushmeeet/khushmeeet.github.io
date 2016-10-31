@@ -8,8 +8,9 @@ layout: default
             <h1>{{page.title}}</h1>
             <h6>{{page.date | date: '%B %d, %Y'}}</h6>
             <div>
+                <i class="fa fa-tags" aria-hidden="true"></i>
                 {% for item in page.category %}
-                <p>{{item}}</p>
+                <a href="">{{item}}</a>
                 {% endfor %}
             </div>
         </header>
