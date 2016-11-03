@@ -8,6 +8,7 @@
 body {
     font-family: 'Catamaran', sans-serif;
     color: #666;
+    letter-spacing: 0.5px;
 }
 
 .current {
@@ -79,9 +80,6 @@ body {
     max-width: 600px;
     margin: 0 auto;
     color: #666;
-    p {
-
-    }
 }
 
 #footer {
@@ -145,10 +143,10 @@ body {
                 display: inline-flex;
                 padding: 10px 20px;
                 i {
-                    padding-right: 10px;
+                    padding-right: 8px;
                     color: #b2b9be;
                     font-size: 15px;
-                    padding-top: 2px;
+                    padding-top: 4px;
                 }
                 a {
                     margin-right: 10px;
