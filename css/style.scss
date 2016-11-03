@@ -1,17 +1,17 @@
 ---
 ---
 
-//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
-//@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+//@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+//@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:300,400,700');
 
 body {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Catamaran', sans-serif;
     color: #666;
 }
 
 .current {
-    background-color: dodgerblue;
+    background-color: #eee;
     border-radius: 3px;
     color: white;
 }
@@ -24,6 +24,16 @@ body {
         padding: 4px 6px;
         margin-right: 5px;
         text-decoration: none;
+        color: darkgrey;
+    }
+    .github {
+        color: black;
+    }
+    .twitter {
+        color: deepskyblue;
+    }
+    .gmail {
+        color: red;
     }
 }
 
@@ -49,10 +59,12 @@ body {
             h1 {
                 font-size: 2.5em;
                 color: black;
+                margin: 0px;
             }
             p {
                 font-weight: 300;
                 color: #aaa;
+                margin: 0px;
             }
         }
     }
@@ -60,17 +72,21 @@ body {
 
 .heart {
     color: deeppink;
+    padding: 0px 1px 0px 1px;
 }
 
 .main-stuff {
     max-width: 600px;
     margin: 0 auto;
     color: #666;
+    p {
+
+    }
 }
 
 #footer {
     //box-shadow: inset 0 1px 0 #eee;
-    padding: 40px 0 0 0;
+    //padding: 40px 0 0 0;
     margin-top: 100px;
     max-width: 600px;
     margin-left: auto;
@@ -92,8 +108,12 @@ body {
         a {
         text-decoration: none;
         display: block;
+        color: black;
+        font-size: 1.3em;
             aside {
-                float: right
+                float: right;
+                color: #b2b9be;
+                font-size: 0.73em;
             }
         }
     }
@@ -112,6 +132,7 @@ body {
                 font-size: 32px;
                 line-height: 1.4em;
                 margin-bottom: 15px;
+                color: black;
             }
             h6 {
                 color: #b2b9be;
