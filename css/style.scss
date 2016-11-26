@@ -1,12 +1,10 @@
 ---
 ---
 
-//@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
-//@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Catamaran:300,400,700');
+@import  url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
 
 body {
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #666;
     letter-spacing: 0.5px;
 }
@@ -25,16 +23,16 @@ body {
         padding: 4px 6px;
         margin-right: 5px;
         text-decoration: none;
-        color: darkgrey;
+        color: indigo;
     }
     .github {
-        color: black;
+        color: #000;
     }
     .twitter {
-        color: deepskyblue;
+        color: #000;
     }
     .gmail {
-        color: red;
+        color: #000;
     }
 }
 
@@ -65,7 +63,6 @@ body {
             p {
                 font-weight: 300;
                 color: #aaa;
-                margin: 0px;
             }
         }
     }
