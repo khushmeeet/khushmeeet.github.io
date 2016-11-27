@@ -5,8 +5,9 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 1.7;
     color: #666;
-    letter-spacing: 0.5px;
 }
 
 .current {
@@ -128,29 +129,36 @@ body {
                 line-height: 1.4em;
                 margin-bottom: 15px;
                 color: black;
+                font-weight: 300;
             }
             h6 {
                 color: #b2b9be;
-                font-weight: 400;
-                font-size: 12px;
+                font-weight: normal;
+                font-size: 13px;
                 margin-top: 0px;
                 padding-top: 5px;
+                letter-spacing: 2px;
+                line-height: 1.5em;
             }
             div {
                 display: inline-flex;
                 padding: 10px 20px;
-                i {
-                    padding-right: 8px;
-                    color: #b2b9be;
-                    font-size: 15px;
-                    padding-top: 4px;
-                }
+                // i {
+                //     padding-right: 8px;
+                //     color: #b2b9be;
+                //     font-size: 15px;
+                //     padding-top: 4px;
+                // }
                 a {
                     margin-right: 10px;
                     font-weight: 300;
                     color: #b2b9be;
-                    font-size: 15px;
+                    font-size: 0.8rem;
                     text-decoration: none;
+                    padding: 1px 8px;
+                    border-radius: 2px;
+                    background-color: #ededed;
+                    letter-spacing: 1px;
                 }
             }
             h6 {
@@ -165,4 +173,9 @@ body {
 .body {
     line-height: 1.7em;
     margin-top: 50px;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    letter-spacing: 1.5px;
 }
