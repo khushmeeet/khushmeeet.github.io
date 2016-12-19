@@ -27,6 +27,7 @@ github_username:  khushmeet
 # Build settings
 markdown: kramdown
 highlighter: rouge
+permalink: pretty
 kramdown:
   input: GFM
   syntax_highlighter: rouge
