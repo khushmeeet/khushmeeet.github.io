@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Signika+Negative|Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Signika+Negative');
 
 body {
     letter-spacing: 1.5px;
@@ -88,7 +88,7 @@ body {
 #footer {
     //box-shadow: inset 0 1px 0 #eee;
     //padding: 40px 0 0 0;
-    font-family: 'Space Mono', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
     margin-top: 100px;
     max-width: 600px;
     margin-left: auto;
@@ -190,7 +190,7 @@ body {
     }
     a {
         text-decoration: none !important;
-        color: #5694f1;
+        color: midnightblue;
     }
 }
 
