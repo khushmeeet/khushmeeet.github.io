@@ -10,15 +10,23 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@khushmeeet">
         <meta name="twitter:creator" content="@khushmeeet">
-        <meta name="twitter:title" content="Khushmeet Singh">
-        <meta name="twitter:description" content="Khushmeet Singh; Pythonist, Angular 2, Machine Learning, Wolfram Language">
+        {% if page.title %}
+            <meta name="twitter:title" content="{{page.title}}">
+        {% else %}
+            <meta name="twitter:title" content="Khushmeet Singh">
+        {% endif %}
+        {% if page.shortie %}
+            <meta name="twitter:description" content="{{page.short_content}}">
+        {% else %}
+            <meta name="twitter:description" content="Khushmeet Singh; Pythonist, Angular 2, Machine Learning, Wolfram Language">
+        {% endif %}
         <meta name="twitter:image" content="{{site.baseurl}}/assets/yeoman-logo.png">
         <!-- Open Graph Protocol -->
         <meta property="og:title" content="Khushmeet Singh" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{site.baseurl}}" />
         <meta property="og:image" content="{{site.baseurl}}/assets/yeoman-logo.png" />
-        <!-- -->
+        <!-- Done -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
         <script src="https://use.fontawesome.com/c06b7f8b5d.js"></script>
