@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Signika:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative|Space+Mono');
 
 body {
     letter-spacing: 1.5px;
@@ -13,22 +13,22 @@ body {
     margin-top: 20px;
     padding: 0px 10px 0 10px;
     font-weight: 300;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
 
     a {
         padding: 4px 6px;
         margin-right: 5px;
         text-decoration: none;
-        color: indigo;
+        color: #5694f1;
     }
     .github {
-        color: indigo;
+        color: #5694f1;
     }
     .twitter {
-        color: indigo;
+        color: #5694f1;
     }
     .gmail {
-        color: indigo;
+        color: #5694f1;
     }
 }
 
@@ -47,7 +47,7 @@ body {
 .home {
     padding: 0px;
     margin-top: 0px;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
     section {
         padding: 100px 40px 0px;
         max-width: 600px;
@@ -63,6 +63,7 @@ body {
                 color: #332;
                 margin: 0px;
                 font-weight: 700;
+                font-family: Helvetica, sans-serif;
             }
             p {
                 font-weight: 300;
@@ -87,7 +88,7 @@ body {
 #footer {
     //box-shadow: inset 0 1px 0 #eee;
     //padding: 40px 0 0 0;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     margin-top: 100px;
     max-width: 600px;
     margin-left: auto;
@@ -135,7 +136,7 @@ body {
                 margin-bottom: 15px;
                 color: #332;
                 font-weight: 300;
-                font-family: 'Signika', sans-serif;
+                font-family: 'Signika Negative', sans-serif;
             }
             h6 {
                 color: #b2b9be;
@@ -145,12 +146,12 @@ body {
                 padding-top: 5px;
                 letter-spacing: 2px;
                 line-height: 1.5em;
-                font-family: 'Signika', sans-serif;
+                font-family: 'Signika Negative', sans-serif;
             }
             div {
                 display: inline-flex;
                 padding: 10px 20px;
-                font-family: 'Signika', sans-serif;
+                font-family: 'Signika Negative', sans-serif;
                 a {
                     margin-right: 10px;
                     font-weight: 300;
@@ -185,7 +186,7 @@ body {
     h1,h2,h3,h4,h5,h6 {
         color: black;
         font-weight: 300;
-        font-family: 'Signika', sans-serif;
+        font-family: 'Signika Negative', sans-serif;
     }
     a {
         text-decoration: none !important;
