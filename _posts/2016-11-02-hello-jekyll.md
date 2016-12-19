@@ -2,6 +2,7 @@
 layout: post
 title: Hello Jekyll
 date: 10 jan 2016
+short_content: this is short content
 category:
   - welcome
   - Jekyll
