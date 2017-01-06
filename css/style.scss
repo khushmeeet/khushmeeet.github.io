@@ -4,8 +4,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Signika+Negative');
 
 body {
-    letter-spacing: 1.5px;
-    line-height: 1.7;
+    @media only screen  and (min-width : 768px) {
+        letter-spacing: 1.5px;
+        line-height: 1.7;
+    }
 }
 
 .navigator {
@@ -55,6 +57,9 @@ body {
         padding: 100px 40px 0px;
         max-width: 600px;
         margin: 0 auto;
+        @media only screen and (max-width : 640px) {
+            padding: 100px 20px 0px;
+        }
         header {
             @media only screen and (max-width : 640px) {
                 font-size: 0.7em;
@@ -74,6 +79,9 @@ body {
             p {
                 font-weight: 300;
                 color: #aaa;
+                @media only screen and (max-width : 640px) {
+                    font-size: 1.3em;
+                }
             }
         }
     }
@@ -94,6 +102,7 @@ body {
         font-size: 0.8em;
         line-height: 1.5;
         letter-spacing: 1.3px;
+        padding: 0px 20px 20px 20px;
     }
 }
 
