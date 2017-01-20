@@ -100,6 +100,14 @@ body {
     animation-delay: .3s;
 }
 
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+
 .heart {
     color: deeppink;
     padding: 0px 1px 0px 1px;
