@@ -75,5 +75,3 @@ Variable containing:
 Well that's pretty much it. In next post we will look at `nn` package and build a CNN for MNIST data using PyTorch.
 
 
-
-
