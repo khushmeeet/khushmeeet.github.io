@@ -10,7 +10,7 @@ tags:
 ---
 
 PyTorch is a scientific computing package for python built by facebook and several other companies and universities. It provides numpy like computation APIs but with strong support
-for GPUs. It also supports deep learning specific APIs, for building models and training them. 
+for GPUs. It also supports deep learning specific APIs, for building models and training them. Let's have a quick look at PyTorch.
 
 ### Comparing with tensorflow
 PyTorch is very much like tensorflow, in a sense that both are used to build complex deep learning models, train them and test them. Both support **computational graphs**, have built-in different kind of layers, optimizers and other utils. But under the hood they are very much different.
@@ -27,7 +27,7 @@ We import PyTorch with `import torch`. Lets construct a 3x3 matrix. We do someth
 mat = torch.Tensor(3,3)
 ```
 This will immideatily give us a 3x3 matrix, something like
-```
+```python
  0.0000e+00  1.0842e-19  9.7721e-38
  3.6902e+19  1.1210e-44 -0.0000e+00
  0.0000e+00  0.0000e+00  0.0000e+00
