@@ -2,7 +2,7 @@
 ---
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Signika+Negative');
-@import url('{{site.url}}/css/son-of-obsidian.css');
+// @import url('{{site.url}}/css/son-of-obsidian.css');
 
 body {
     @media only screen  and (min-width : 768px) {
@@ -235,15 +235,14 @@ body {
     text-rendering: optimizeLegibility;
     font-weight: 400;
     letter-spacing: 1.5px;
-    color: #666;
+    color: #303030;
     font-family: Helvetica, sans-serif;
     @media only screen and (max-width : 640px) {
         font-size: 15px;
         word-break: break-all;
     }
     h1,h2,h3,h4,h5,h6 {
-        color: black;
-        font-weight: 300;
+        color: #303030;
         font-family: 'Signika Negative', sans-serif;
     }
     a {
@@ -254,39 +253,39 @@ body {
 
 // Syntax Highlighting
 /* Adjusted to give override background and text colour */
-.highlight pre, pre, .highlight .hll {
-    background-color: #272b2d;
-    padding: 6px 10px;
-    border-radius: 3px;
-    color: #FFFFFF;
-}
+// .highlight pre, pre, .highlight .hll {
+//     background-color: #272b2d;
+//     padding: 6px 10px;
+//     border-radius: 3px;
+//     color: #FFFFFF;
+// }
 
 pre {
     white-space: pre-wrap;
 }
 
-code {
-    padding: .2rem .4rem;
-    font-size: 90%;
-    color: #bd4147;
-    background-color: #f7f7f9;
-    border-radius: .25rem;
-    @media only screen and (max-width : 640px) {
-        font-size: 12px;
-    }
-}
+// code {
+//     padding: .2rem .4rem;
+//     font-size: 90%;
+//     color: #bd4147;
+//     background-color: #f7f7f9;
+//     border-radius: .25rem;
+//     @media only screen and (max-width : 640px) {
+//         font-size: 12px;
+//     }
+// }
 
-em {
-    font-size: 0.8em;
-}
+// em {
+//     font-size: 0.8em;
+// }
 
-pre[class=lineno] {
-    visibility: hidden;
-    padding: 0px;
-    font-size: 0px;
-}
+// pre[class=lineno] {
+//     visibility: hidden;
+//     padding: 0px;
+//     font-size: 0px;
+// }
 
-.highlight table {
-    border-spacing: 0;
-    width: 100%;
-}
+// .highlight table {
+//     border-spacing: 0;
+//     width: 100%;
+// }
