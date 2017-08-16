@@ -2,7 +2,7 @@
 ---
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Signika+Negative');
-// @import url('{{site.url}}/css/son-of-obsidian.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
 
 body {
     @media only screen  and (min-width : 768px) {
@@ -251,41 +251,13 @@ body {
     }
 }
 
-// Syntax Highlighting
-/* Adjusted to give override background and text colour */
-// .highlight pre, pre, .highlight .hll {
-//     background-color: #272b2d;
-//     padding: 6px 10px;
-//     border-radius: 3px;
-//     color: #FFFFFF;
-// }
-
 pre {
     white-space: pre-wrap;
 }
 
-// code {
-//     padding: .2rem .4rem;
-//     font-size: 90%;
-//     color: #bd4147;
-//     background-color: #f7f7f9;
-//     border-radius: .25rem;
-//     @media only screen and (max-width : 640px) {
-//         font-size: 12px;
-//     }
-// }
-
-// em {
-//     font-size: 0.8em;
-// }
-
-// pre[class=lineno] {
-//     visibility: hidden;
-//     padding: 0px;
-//     font-size: 0px;
-// }
-
-// .highlight table {
-//     border-spacing: 0;
-//     width: 100%;
-// }
+code {
+    font-family: 'Source Code Pro', monospace;
+    @media only screen and (max-width : 640px) {
+        font-size: 12px;
+    }
+}
