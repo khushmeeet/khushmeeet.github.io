@@ -26,16 +26,16 @@ github_username:  khushmeet
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: none
 permalink: pretty
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Rouge Options › https://github.com/jneen/rouge#full-options
-    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
-    block:
-      line_numbers: true
+  # syntax_highlighter: rouge
+  # syntax_highlighter_opts:
+  #   # Rouge Options › https://github.com/jneen/rouge#full-options
+  #   #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+  #   block:
+  #     line_numbers: true
 gems:
   - jekyll-feed
 exclude:
