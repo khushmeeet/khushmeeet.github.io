@@ -4,7 +4,7 @@ title: Setting custom domain in heroku
 shortie: Few steps on how to setup domain to work with your heroku app
 date: 2017-07-09
 categories: web
-tags: 
+tags:
   - heroku
   - godaddy
 ---
@@ -19,7 +19,7 @@ Here are few steps you need to follow, to get this going.
 
 **Step 3 -** To verify your previous step, do `ping www.domain.com`. This should give `proxy.heroku.com` for ping.
 
-**Step 4 -** If that is successful, its time to add domain to heroku. Your do this either in the command line of the dashboard. Here is the command of that `heroku domains:add www.domain.com --app herokuapp`. This added domain for `www` but we also want our site to open when we enter domain without `www` like this `domain.com`. 
+**Step 4 -** If that is successful, its time to add domain to heroku. Your do this either in the command line of the dashboard. Here is the command of that `heroku domains:add www.domain.com --app herokuapp`. This added domain for `www` but we also want our site to open when we enter domain without `www` like this `domain.com`.
 
 For this enter the same command again, but this time do `heroku domains:add domain.com --app herokuapp`.
 

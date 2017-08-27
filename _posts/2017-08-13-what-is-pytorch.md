@@ -15,9 +15,9 @@ for GPUs. It also supports deep learning specific APIs, for building models and 
 ## Comparing with tensorflow
 PyTorch is very much like tensorflow, in a sense that both are used to build complex deep learning models, train them and test them. Both support **computational graphs**, have built-in different kind of layers, optimizers and other utils. But under the hood they are very much different.
 
-Tensorflow, developed by Google was intended to be a library for building production grade models, that can scale better. Hence tensorflow is static in nature. What this means is that, first we define out model from beginning to the end and them execute them. This lets the tensorflow to optimize the graph by, lets say fusing the nodes together or removing redundant nodes. They have even developed a compiler to do all that stuff called **XLA Compiler**. Where as PyTorch is dynamic in nature. Meaning graph gets executed as soon as some node gets attached. The technique used here to achieve this is **Reverse-mode auto-differentiation**. 
+Tensorflow, developed by Google was intended to be a library for building production grade models, that can scale better. Hence tensorflow is static in nature. What this means is that, first we define out model from beginning to the end and them execute them. This lets the tensorflow to optimize the graph by, lets say fusing the nodes together or removing redundant nodes. They have even developed a compiler to do all that stuff called **XLA Compiler**. Where as PyTorch is dynamic in nature. Meaning graph gets executed as soon as some node gets attached. The technique used here to achieve this is **Reverse-mode auto-differentiation**.
 
-Other major difference that can be found is that PyTorch is imperative in nature. It means that all the usual python constructs like loop, if-else can be used within PyTorch, unlike tensorflow, where we have to use these constructs as nodes in the graph, like `tf.while_loop`. 
+Other major difference that can be found is that PyTorch is imperative in nature. It means that all the usual python constructs like loop, if-else can be used within PyTorch, unlike tensorflow, where we have to use these constructs as nodes in the graph, like `tf.while_loop`.
 
 PyTorch is designed for rapid prototyping. Hence more and more researchers are now using it in their reseach findings. But tensorflow still remains very popular.
 
@@ -45,14 +45,14 @@ if torch.cuda.is_available():
 ```
 
 ## Going deeper
-Ofcourse when doing deep learning, we do backpropagation. And for that we need differentiation. Thankfully PyTorch has a built-in package **autograd** for automatic differentiation. 
+Ofcourse when doing deep learning, we do backpropagation. And for that we need differentiation. Thankfully PyTorch has a built-in package **autograd** for automatic differentiation.
 
-For this, autograd package has `Variable` class, that wraps a tensor. When these tensors undergo differentiation, there data remians under `.data` attribute and gradient under `.grad` attribute of Variable class. 
+For this, autograd package has `Variable` class, that wraps a tensor. When these tensors undergo differentiation, there data remians under `.data` attribute and gradient under `.grad` attribute of Variable class.
 
 ![Variable]({{site.url}}/assets/Variable.png)
 *from pytorch.org*
 
-To do gradient calculation, we call `.backward()`. We also need to speccify `requires_grad=True` when defining variable to calculate gradient of this variable when calling `.backard()`. 
+To do gradient calculation, we call `.backward()`. We also need to speccify `requires_grad=True` when defining variable to calculate gradient of this variable when calling `.backard()`.
 
 Here's some code
 ```python
@@ -61,7 +61,7 @@ y = x + 14
 y.backward()
 ```
 
-We get out gradients accumulated in 
+We get out gradients accumulated in
 ```python
 x.grad
 ```
