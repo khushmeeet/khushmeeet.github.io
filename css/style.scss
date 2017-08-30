@@ -1,8 +1,7 @@
 ---
 ---
-
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Signika+Negative');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
 body {
     @media only screen  and (min-width : 768px) {
@@ -16,7 +15,7 @@ body {
     margin-top: 20px;
     padding: 0px 10px 0 10px;
     font-weight: 300;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     @media only screen and (max-width : 640px) {
         font-size: 0.9em;
     }
@@ -53,7 +52,7 @@ body {
 .home {
     padding: 0px;
     margin-top: 0px;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     section {
         padding: 100px 40px 0px;
         max-width: 600px;
@@ -190,7 +189,7 @@ body {
                 margin-bottom: 15px;
                 color: #332;
                 font-weight: 300;
-                font-family: 'Signika Negative', sans-serif;
+                font-family: 'Fira Sans', sans-serif;
             }
             h6 {
                 color: #b2b9be;
@@ -200,12 +199,12 @@ body {
                 padding-top: 5px;
                 letter-spacing: 2px;
                 line-height: 1.5em;
-                font-family: 'Signika Negative', sans-serif;
+                font-family: 'Fira Sans', sans-serif;
             }
             div {
                 display: inline-flex;
                 padding: 10px 20px;
-                font-family: 'Signika Negative', sans-serif;
+                font-family: 'Fira Sans', sans-serif;
                 a {
                     margin-right: 10px;
                     font-weight: 300;
@@ -243,7 +242,7 @@ body {
     }
     h1,h2,h3,h4,h5,h6 {
         color: #303030;
-        font-family: 'Signika Negative', sans-serif;
+        font-family: 'Fira Sans', sans-serif;
     }
     a {
         text-decoration: none !important;
@@ -256,8 +255,14 @@ pre {
 }
 
 code {
-    font-family: 'Source Code Pro', monospace;
+    padding: .2rem .4rem;
+    font-size: 90%;
+    color: #bd4147;
+    background-color: #f7f7f9;
+    border-radius: .25rem;
+    font-family: 'Inconsolata', monospace;
     @media only screen and (max-width : 640px) {
         font-size: 12px;
     }
 }
+
