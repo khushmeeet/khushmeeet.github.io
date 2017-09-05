@@ -62,8 +62,9 @@
 <body>
     <header>
         <nav class="navigator">
-            <a href="https://www.linkedin.com/in/khushmeet-singh-9a332ab8/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="{{site.baseurl}}/pgp/"><i class="fa fa-key" aria-hidden="true"></i></a>
             <a href="https://github.com/khushmeet"><i class="fa fa-github github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/khushmeet-singh-9a332ab8/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             <a href="https://twitter.com/khushmeeet"><i class="fa fa-twitter twitter" aria-hidden="true"></i></a>
             <a href="mailto:khushmeetsingh1996@gmail.com"><i class="fa fa-envelope gmail" aria-hidden="true"></i></a>
             <a class="{% if page.url == '/' %} current {% endif %}" href="{{site.baseurl}}/">About</a>
@@ -76,7 +77,9 @@
     </footer>
     <script async src="https://use.fontawesome.com/e9ecd16adf.js"></script>
     <script src="{{site.url}}/css/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
     <!-- <script>
         addEventListener('load', function() {
             var code = document.querySelector('#code');
