@@ -1,0 +1,24 @@
+{
+  "name": "Khushmeet's Digital Garden",
+  "version": "1.0.0",
+  "description": "Khushmeet's little corner on the internet.",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khushmeeet/khushmeeet.github.io.git"
+  },
+  "keywords": [],
+  "author": "Khushmeet Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khushmeeet/khushmeeet.github.io/issues"
+  },
+  "homepage": "https://github.com/khushmeeet/khushmeeet.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
