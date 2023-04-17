@@ -1,11 +1,11 @@
 {
-  "name": "Khushmeet's Digital Garden",
+  "name": "khushmeet-digital-garden",
   "version": "1.0.0",
   "description": "Khushmeet's little corner on the internet.",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "start": "eleventy --serve & npx tailwindcss -i src/css/style.css -c tailwind.config.js -o _site/css/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production npx tailwindcss -i src/css/tailwind.css -c tailwind.config.js -o _site/css/style.css --minify"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/khushmeeet/khushmeeet.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.22",
+    "tailwindcss": "^3.3.1"
   }
 }
