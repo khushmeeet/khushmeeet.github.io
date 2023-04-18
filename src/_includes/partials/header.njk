@@ -5,11 +5,11 @@
             {% for link in sitemap %}
                 <li class="p-2 mx-2">
                     {% if link == page.url %}
-                        <a class="bg-amber-300 p-0.5" href="{{ link }}">~{{ link }}</a>
+                        <a class="bg-[#D1A32F] p-0.5" href="{{ link }}">~{{ link }}</a>
                     {% elif page.url == '/' and link == '/khushmeet' %}
-                        <a class="bg-amber-300 p-0.5" href="{{ link }}">~{{ link }}</a>
+                        <a class="bg-[#D1A32F] p-0.5" href="{{ link }}">~{{ link }}</a>
                     {% else %}
-                        <a class="hover:bg-amber-300 p-0.5" href="{{ link }}">~{{ link }}</a>
+                        <a class="hover:bg-[#D1A32F] p-0.5" href="{{ link }}">~{{ link }}</a>
                     {% endif %}
                 </li>
             {% endfor %}
