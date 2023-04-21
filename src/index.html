@@ -1,0 +1,94 @@
+---
+title: Khushmeet's Digital Garden
+layout: base.html
+---
+
+<main class="container mx-auto px-4 mt-16">
+    <div class="flex justify-center">
+        <div class="mr-6">
+            <img src="../assets/me.png">
+        </div>
+        <div class="ml-6 font-mono">
+            <p class="text-[#9BE33E] font-bold">KHUSHMEET SINGH SHERGILL</p>
+            <p>--------------------------</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">OS:</span> macOS 13.3.1 22E261 arm64</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">Host:</span> MacBookPro17,1</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">Kernel:</span> 22.4.0</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">Uptime:</span> 4 days, 13 hours, 5 mins</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">Packages:</span> 1 (brew)</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">Shell:</span> zsh 5.9</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">Resolution:</span> 1440x900</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">DE:</span> Aqua</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">WM:</span> Rectangle</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">Terminal:</span> WezTerm</p>
+            <p class="text-sm"><span class="text-[#D1A32F]">CPU:</span> Apple M1</p>
+        </div>
+    </div>
+    <div class="text-center mt-20 font-mono">
+        <p>CURRENT ACTIVITIES</p>
+        <div class="grid grid-rows-2 grid-flow-col gap-4">
+            <div class="m-4">
+                <p>Books</p>
+                <div class="text-center">
+                    <p>
+                        <span class="px-0.5"><a href="">Fall of Hyperion</a></span>
+                        <span class="text-xs px-0.5" id="ascii-progress-bar-1"></span>
+                        <span class="text-xs" id="progress-value-1"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="m-4">
+                <p>Podcasts</p>
+                <div class="text-center">
+                    <p>
+                        <span class="px-0.5"><a href="">Changelog #452</a></span>
+                        <span class="text-xs px-0.5" id="ascii-progress-bar-2"></span>
+                        <span class="text-xs" id="progress-value-2"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="m-4">
+                <p>Books</p>
+                <div class="text-center">
+                    <p>
+                        <span class="px-0.5"><a href="">Fall of Hyperion</a></span>
+                        <span class="text-xs px-0.5" id="ascii-progress-bar-3"></span>
+                        <span class="text-xs" id="progress-value-3"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="m-4">
+                <p>Books</p>
+                <div class="text-center">
+                    <p>
+                        <span class="px-0.5"><a href="">Fall of Hyperion</a></span>
+                        <span class="text-xs px-0.5" id="ascii-progress-bar-4"></span>
+                        <span class="text-xs" id="progress-value-4"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    let current_percent1 = 30;
+    let current_percent2 = 40;
+    let current_percent3 = 70;
+    let current_percent4 = 30;
+    document.getElementById("progress-value-1").innerHTML = current_percent1 + "%";
+    document.getElementById("progress-value-2").innerHTML = current_percent2 + "%";
+    document.getElementById("progress-value-3").innerHTML = current_percent3 + "%";
+    document.getElementById("progress-value-4").innerHTML = current_percent4 + "%";
+
+    progress_bar1 = document.getElementById("ascii-progress-bar-1");
+    progress_bar2 = document.getElementById("ascii-progress-bar-2");
+    progress_bar3 = document.getElementById("ascii-progress-bar-3");
+    progress_bar4 = document.getElementById("ascii-progress-bar-4");
+    for (n = 0; n < 20; n++) {
+        progress_bar1.innerHTML += current_percent1 < (n + 1) * 5 ? "░" : "▓";
+        progress_bar2.innerHTML += current_percent2 < (n + 1) * 5 ? "░" : "▓";
+        progress_bar3.innerHTML += current_percent3 < (n + 1) * 5 ? "░" : "▓";
+        progress_bar4.innerHTML += current_percent4 < (n + 1) * 5 ? "░" : "▓";
+    }
+</script>
