@@ -1,7 +1,9 @@
 module.exports = [
-    '/khushmeet',
-    '/dogsheep',
-    '/current',
-    '/blog',
-    '/gpg'
+  '/', // For index page (~/khushmeet)
+  '/dogsheep',
+  '/current',
+  '/blog',
+  '/Library',
+  '/directory',
+  '/gpg'
 ]

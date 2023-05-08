@@ -1,13 +1,15 @@
-<header class="justify-center mt-10">
+<header class="justify-center">
     <nav>
         {# for li border -> table-cell pl-1 pr-4 border border-black border-dashed #}
         <ul class="flex justify-center font-mono">
             {% for link in sitemap %}
             <li class="p-2 mx-2">
-                {% if link == page.url %}
+                {% if page.url == link == '/' %}
                 <a class="bg-[#D1A32F] p-0.5" href="{{ link }}">~{{ link }}</a>
-                {% elif page.url == '/' and link == '/khushmeet' %}
-                <a class="bg-[#D1A32F] p-0.5" href="{{ link }}">~{{ link }}</a>
+                {% elif link == '/' %}
+                <a class="hover:bg-[#D1A32F] p-0.5" href="{{ link }}">~{{ link }}khushmeet</a>
+                {% elif page.url == link %}
+                <a class="bg-[#D1A32F] p-0.5" href="/">~{{ link }}khushmeet</a>
                 {% else %}
                 <a class="hover:bg-[#D1A32F] p-0.5" href="{{ link }}">~{{ link }}</a>
                 {% endif %}
