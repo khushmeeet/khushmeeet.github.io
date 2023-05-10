@@ -3,7 +3,8 @@ module.exports = [
   '/dogsheep',
   '/current',
   '/blog',
-  '/Library',
+  '/commonplace',
+  '/library',
   '/directory',
   '/gpg'
 ]
