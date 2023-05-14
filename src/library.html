@@ -13,13 +13,13 @@ layout: base.html
                     <div class="table-row">
                         <div class="table-cell text-left pl-1 pr-4 border border-black border-dashed font-bold">No.
                         </div>
-                        <div class="table-cell w-3/5 text-left pl-1 pr-4 border border-black border-dashed font-bold">
+                        <div class="table-cell w-3/6 text-left pl-1 pr-4 border border-black border-dashed font-bold">
                             Movie
                         </div>
-                        <div class="table-cell w-1/5 text-left pl-1 pr-4 border border-black border-dashed font-bold">
+                        <div class="table-cell w-2/6 text-left pl-1 pr-4 border border-black border-dashed font-bold">
                             Director
                         </div>
-                        <div class="table-cell w-1/5 text-left pl-1 pr-4 border border-black border-dashed font-bold">
+                        <div class="table-cell w-1/6 text-left pl-1 pr-4 border border-black border-dashed font-bold">
                             Watched On
                         </div>
                     </div>
@@ -29,11 +29,11 @@ layout: base.html
                     <div class="table-row">
                         <div class="table-cell text-left pl-1 pr-4 border border-black border-dashed">{{loop.index}}
                         </div>
-                        <div class="table-cell w-3/5 text-left pl-1 pr-4 border border-black border-dashed">{{movie[0]}}
+                        <div class="table-cell w-3/6 text-left pl-1 pr-4 border border-black border-dashed">{{movie[0]}}
                         </div>
-                        <div class="table-cell w-1/5 text-left pl-1 pr-4 border border-black border-dashed">{{movie[1]}}
+                        <div class="table-cell w-2/6 text-left pl-1 pr-4 border border-black border-dashed">{{movie[1]}}
                         </div>
-                        <div class="table-cell w-1/5 text-left pl-1 pr-4 border border-black border-dashed">{{movie[2]}}
+                        <div class="table-cell w-1/6 text-left pl-1 pr-4 border border-black border-dashed">{{movie[2]}}
                         </div>
                     </div>
                     {% endfor %}
@@ -49,13 +49,13 @@ layout: base.html
                         <div class="table-cell text-left pl-1 pr-4 border border-black border-dashed font-bold">
                             No.
                         </div>
-                        <div class="table-cell w-3/5 text-left pl-1 pr-4 border border-black border-dashed font-bold">
+                        <div class="table-cell w-3/6 text-left pl-1 pr-4 border border-black border-dashed font-bold">
                             Book
                         </div>
-                        <div class="table-cell w-1/5 text-left pl-1 pr-4 border border-black border-dashed font-bold">
+                        <div class="table-cell w-2/6 text-left pl-1 pr-4 border border-black border-dashed font-bold">
                             Author
                         </div>
-                        <div class="table-cell w-1/5 text-left pl-1 pr-4 border border-black border-dashed font-bold">
+                        <div class="table-cell w-1/6 text-left pl-1 pr-4 border border-black border-dashed font-bold">
                             Read On
                         </div>
                     </div>
@@ -66,11 +66,12 @@ layout: base.html
                         <div class="table-cell text-left pl-1 pr-4 border border-black border-dashed">
                             {{loop.index}}
                         </div>
-                        <div class="table-cell w-2/4 text-left pl-1 pr-4 border border-black border-dashed">{{book[0]}}
+                        <div class="table-cell w-3/6 text-left pl-1 pr-4 border border-black border-dashed">
+                            <a href="">{{book[0]}}</a>
                         </div>
-                        <div class="table-cell w-1/4 text-left pl-1 pr-4 border border-black border-dashed">{{book[1]}}
+                        <div class="table-cell w-2/6 text-left pl-1 pr-4 border border-black border-dashed">{{book[1]}}
                         </div>
-                        <div class="table-cell w-1/5 text-left pl-1 pr-4 border border-black border-dashed">{{book[2]}}
+                        <div class="table-cell w-1/6 text-left pl-1 pr-4 border border-black border-dashed">{{book[2]}}
                         </div>
                     </div>
                     {% endfor %}

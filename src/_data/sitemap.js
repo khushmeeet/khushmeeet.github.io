@@ -2,7 +2,7 @@ module.exports = [
   '/', // For index page (~/khushmeet)
   '/dogsheep',
   '/current',
-  '/blog',
+  '/weblog',
   '/commonplace',
   '/library',
   '/directory',
