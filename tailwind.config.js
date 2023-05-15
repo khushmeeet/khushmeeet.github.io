@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true,
   content: ['src/**/*.{njk,md,html}', 'src/**/*.svg'],
   darkMode: 'class',
   theme: {
@@ -9,5 +10,7 @@ module.exports = {
       'ibm-plex': ['IBM Plex Mono', 'monospace']
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }

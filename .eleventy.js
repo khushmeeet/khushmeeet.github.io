@@ -1,6 +1,9 @@
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget('tailwind.config.js')
   eleventyConfig.addWatchTarget("src/css")
+  eleventyConfig.addWatchTarget("src/js")
+  eleventyConfig.addPassthroughCopy("src/css")
+  eleventyConfig.addPassthroughCopy("src/js")
   eleventyConfig.addPassthroughCopy("src/assets")
   eleventyConfig.setBrowserSyncConfig({ open: true })
   return {
