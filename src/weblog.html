@@ -1,0 +1,49 @@
+---
+title: Weblog
+layout: base.html
+---
+
+<main class="container mx-auto px-36 mt-10">
+    <div class="flex flex-col justify-center">
+        <div class="table-auto border-collapse w-full font-berkeley">
+            <p class="pb-1 mx-auto font-berkeley font-bold">
+                WEBLOG</p>
+            <div class="table-header-group">
+                <div class="table-row text-[0.833em] ">
+                    <div class="table-cell text-left pl-1 pr-4 py-0.5 border border-black border-dashed font-bold">No.
+                    </div>
+                    <div
+                        class="table-cell w-3/6 text-left pl-1 pr-4 py-0.5 border border-black border-dashed font-bold">
+                        Title
+                    </div>
+                    <div
+                        class="table-cell w-2/6 text-left pl-1 pr-4 py-0.5 border border-black border-dashed font-bold">
+                        About
+                    </div>
+                    <div
+                        class="table-cell w-1/6 text-left pl-1 pr-4 py-0.5 border border-black border-dashed font-bold">
+                        Published On
+                    </div>
+                </div>
+            </div>
+            <div class="table-row-group text-[0.833em]">
+                {% for item in collections.weblog %}
+                <div class="table-row">
+                    <div class="table-cell text-left pl-1 pr-4 py-0.5 border border-black border-dashed">
+                        {{loop.index}}
+                    </div>
+                    <div class="table-cell w-3/6 text-left pl-1 pr-4 py-0.5 border border-black border-dashed">
+                        <a href="{{item.url}}">{{item.data.title}}</a>
+                    </div>
+                    <div class="table-cell w-2/6 text-left pl-1 pr-4 py-0.5 border border-black border-dashed">
+                        {{item.data.about}}
+                    </div>
+                    <div class="table-cell w-1/6 text-left pl-1 pr-4 py-0.5 border border-black border-dashed">
+                        {{item.data.date.toISOString().slice(0, 10)}}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
