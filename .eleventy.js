@@ -12,6 +12,10 @@ module.exports = function(eleventyConfig) {
   let formattedDate = now.getFullYear() + "-" + ("0" + (now.getMonth() + 1)).slice(-2) + "-" + ("0" + now.getDate()).slice(-2);
   eleventyConfig.addGlobalData("lastUpdated", `${formattedDate}`);
 
+  eleventyConfig.addFilter("trimSlash", function(value) {
+    return value.slice(0, -1);
+  });
+
   return {
     templateFormats: [
       "md",

@@ -4,14 +4,18 @@
         <ul class="flex justify-center font-berkeley">
             {% for link in sitemap %}
             <li class="p-2 mx-2">
-                {% if page.url == link == '/' %}
-                <a class="bg-[#1c1c1c] p-0.5" href="{{ link }}">~{{ link }}</a>
-                {% elif link == '/' %}
-                <a class="hover:bg-[#1c1c1c] hover:text-[#d7c9ac] p-0.5" href="{{ link }}">~{{ link }}khushmeet</a>
-                {% elif page.url == link %}
-                <a class="bg-[#1c1c1c] p-0.5" href="/">~{{ link }}khushmeet</a>
+                {% if page.url == link %}
+                {% if link == '/' %}
+                <a class="bg-[#1c1c1c] text-[#d7c9ac] p-0.5" href="/">~/khushmeet</a>
                 {% else %}
-                <a class="hover:bg-[#1c1c1c] hover:text-[#d7c9ac] p-0.5" href="{{ link }}">~{{ link }}</a>
+                <a class="bg-[#1c1c1c] text-[#d7c9ac] p-0.5" href="{{ link }}">~{{ link|trimSlash }}</a>
+                {% endif %}
+                {% else %}
+                {% if link == '/' %}
+                <a class="hover:bg-[#1c1c1c] hover:text-[#d7c9ac] p-0.5" href="/">~/khushmeet</a>
+                {% else %}
+                <a class="hover:bg-[#1c1c1c] hover:text-[#d7c9ac] p-0.5" href="{{ link }}">~{{ link|trimSlash }}</a>
+                {% endif %}
                 {% endif %}
             </li>
             {% endfor %}
