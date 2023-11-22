@@ -4,8 +4,8 @@
   "description": "Khushmeet's little corner on the internet.",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve & npx tailwindcss -i src/tailwind/style.css -c tailwind.config.js -o _site/tailwind/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production npx tailwindcss -i src/tailwind/style.css -c tailwind.config.js -o _site/tailwind/style.css --minify"
+    "start": "bun run eleventy --serve & bun run npx tailwindcss -i src/tailwind/style.css -c tailwind.config.js -o _site/tailwind/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true bun run eleventy & NODE_ENV=production bun run npx tailwindcss -i src/tailwind/style.css -c tailwind.config.js -o _site/tailwind/style.css --minify"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.22",
-    "tailwindcss": "^3.3.1"
+    "tailwindcss": "^3.3.1",
+    "bun": "^0.1.0"
   }
 }
