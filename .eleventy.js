@@ -1,4 +1,4 @@
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('tailwind.config.js')
   eleventyConfig.addWatchTarget("src/css")
   eleventyConfig.addWatchTarget("src/js")
@@ -12,7 +12,7 @@ module.exports = function(eleventyConfig) {
   let formattedDate = now.getFullYear() + "-" + ("0" + (now.getMonth() + 1)).slice(-2) + "-" + ("0" + now.getDate()).slice(-2);
   eleventyConfig.addGlobalData("lastUpdated", `${formattedDate}`);
 
-  eleventyConfig.addFilter("trimSlash", function(value) {
+  eleventyConfig.addFilter("trimSlash", function (value) {
     return value.slice(0, -1);
   });
 
